@@ -1,0 +1,46 @@
+title: FSSE default document
+author: Pascal Burkhard
+version: 1.0.0
+contributes:
+  format:
+    pdf:
+      template-partials:
+        - title.tex
+        - pandoc.tex
+        - before-body.tex
+      include-in-header: 
+        - header-setup.tex
+      logo: logo_fsse.png
+      logowidth: 2cm
+      banner: banner_fsse.jpg
+      papersize: a4
+      colorlinks: false
+      lang: fr-CH
+      geometry:
+        - bindingoffset=0cm
+        - headheight=0cm
+        - left=2cm
+        - right=2cm
+        - top=2cm
+        - bottom=2cm
+        - headsep=1cm
+        - footskip=1cm
+      mainfont: FiraSans
+      mainfontoptions:
+        - Extension = .otf
+        - UprightFont = *-Light
+        - ItalicFont = *-LightItalic
+        - BoldFont = *-Regular
+        - BoldItalicFont = *-Italic
+      sansfont: FiraSans
+      sansfontoptions:
+        - Extension = .otf
+        - UprightFont = *-Light
+        - ItalicFont = *-LightItalic
+        - BoldFont = *-Regular
+        - BoldItalicFont = *-Italic
+      mathfont: FiraMath-Light
+      mathfontoptions:
+        - Path = /Library/Fonts/
+        - Extension = .otf
+      
