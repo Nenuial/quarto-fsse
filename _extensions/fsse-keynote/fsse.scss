@@ -1,0 +1,152 @@
+/*-- scss:defaults --*/
+
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300,300i,400,400i,500,500i,700,700i);
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,200;0,300;0,400&display=swap');
+@import url(https://cdn.rawgit.com/tonsky/FiraCode/1.204/distr/fira_code.css);
+@import url(https://use.fontawesome.com/releases/v6.1.1/css/all.css);
+
+$font-family-sans-serif: 'Fira Sans', sans-serif !default;
+
+$border-leftright-width: 80px;
+$border-updown-width: 40px;
+
+$font-family-sans-serif: "Fira Sans", Palatino, serif !default;
+$body-color: #3e495b !default;
+$link-color: #e4211a !default;
+$presentation-font-size-root: 30px !default;
+$presentation-heading-color: #009ddf !default;
+$input-panel-bg: rgba(233, 236, 239, 0.2) !default;
+
+/*-- scss:rules --*/
+
+$slide-width: calc(var(--slide-width) + #{$border-leftright-width} * 2);
+$slide-height: calc(var(--slide-height) + #{$border-updown-width} * 2);
+
+@mixin full-screen {
+  position: absolute;
+  top: -$border-updown-width;
+  right: -$border-leftright-width;
+  height: $slide-height !important;
+  width: $slide-width !important;
+  max-height: $slide-height !important;
+  max-width: $slide-width !important;
+  margin: 0 !important;
+  z-index: -1;
+}
+
+.quarto-light {
+  background-color: #D8D8D3;
+}
+
+.quarto-dark {
+  background-color: #D8D8D3;
+}
+
+html.print-pdf .quarto-light {
+  background-color: $body-bg;
+}
+
+html.print-pdf .quarto-dark {
+  background-color: $body-bg;
+}
+
+.slides {
+  background-color: $body-bg;
+  border-style: solid;
+  border-color: $body-bg;
+  box-shadow: #222222 0px 0px 30px 0px;
+
+  border-left-width: 80px;
+  border-right-width: 80px;
+  border-top-width: 40px;
+  border-bottom-width: 40px;
+}
+
+.image-left {
+  @include full-screen;
+  left: -$border-leftright-width;
+  width: $slide-width / 2 !important;
+  max-width: $slide-width / 2 !important;
+}
+
+.image-right {
+  @include full-screen;
+  right: -$border-leftright-width;
+  width: $slide-width / 2 !important;
+  max-width: $slide-width / 2 !important;
+}
+
+.background-color-div {
+  @include full-screen;
+}
+
+.background-image-div {
+  @include full-screen;
+}
+
+.background-video-div {
+  @include full-screen;
+  max-width: none !important;
+  max-height: none !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.background-iframe-div {
+  @include full-screen;
+  max-width: none !important;
+  max-height: none !important;
+  -o-object-fit: cover;
+  object-fit: cover;
+  z-index: -1 !important;
+}
+
+.reveal .slide-menu-button {
+  left: 8px - $border-leftright-width / 2 !important;
+  bottom: 8px - $border-updown-width / 2 !important;
+  pointer-events: auto;
+}
+
+.reveal .progress {
+  z-index: 100;
+  bottom: - $border-updown-width;
+  width: $slide-width !important;
+  left: -$border-leftright-width;
+}
+
+#title-slide {
+  text-align: left;
+}
+
+#title-slide h1 {
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  border-bottom: 2px solid $link-color;
+}
+
+.footer {
+  color: $body-color !important;
+}
+
+.slide h1,
+.slide h2 {
+  border-bottom: 2px solid $link-color;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.no-title h1,
+.no-title h2 {
+  display: none !important;
+}
+
+.slide-logo {
+    bottom: 0px !important;
+    right: 0px !important;
+    max-height: 3.3rem !important;
+    height: 200px !important;
+    width: auto;
+    z-index: 2;
+}
