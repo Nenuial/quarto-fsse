@@ -2,7 +2,9 @@
 title: Presentation
 subtitle: Subtitle
 format:
-  fsse-keynote-revealjs: default
+  fsse-keynote-revealjs:
+    width: 1600
+    height: 900
 ---
 
 ## Introduction
