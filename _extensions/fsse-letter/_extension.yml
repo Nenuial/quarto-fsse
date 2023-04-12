@@ -1,0 +1,46 @@
+title: FSSE Letter
+author: Pascal Burkhard
+version: 1.0.0
+contributes:
+  format:
+    pdf:
+      format-resources:
+        - swiss.lco
+      template-partials:
+        - title.tex
+        - before-body.tex
+        - after-body.tex
+      include-in-header: 
+        - packages.tex
+        - datetime-header.tex
+      logo: logo_fsse.png
+      documentclass: scrlttr2
+      papersize: a4
+      classoption:
+        - "swiss"
+      colorlinks: false
+      lang: fr-CH
+      geometry:
+        - left=2cm
+        - right=2cm
+      mainfont: FiraSans
+      mainfontoptions:
+        - Extension = .otf
+        - Path = /Library/Fonts/
+        - UprightFont = *-Light
+        - ItalicFont = *-LightItalic
+        - BoldFont = *-Regular
+        - BoldItalicFont = *-Italic
+      sansfont: FiraSans
+      sansfontoptions:
+        - Extension = .otf
+        - Path = /Library/Fonts/
+        - UprightFont = *-Light
+        - ItalicFont = *-LightItalic
+        - BoldFont = *-Regular
+        - BoldItalicFont = *-Italic
+      mathfont: FiraMath-Light
+      mathfontoptions:
+        - Path = /Library/Fonts/
+        - Extension = .otf
+      

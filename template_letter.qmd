@@ -1,0 +1,30 @@
+---
+name: Hans Muster
+address: Rue Centrale
+number: 1
+zip: 1111
+toplace: Perpette-les-Oies
+country: CH
+
+author: "Pascal Burkhard"
+mytitle: ""
+place: "Mex"
+lang: "fr-CH"
+
+return-email: "pascal.burkhard@gmail.com"
+return-phone: "079 772 37 56"
+return-address: 
+  - "Ch. du Marais 10"
+  - "CH-1031 Mex"
+
+subject: Lettre type
+opening: Monsieur,
+closing: Avec mes meilleures salutations,
+signature: Pascal Burkhard
+
+format: fsse-letter-pdf
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin maximus turpis id neque pharetra, ut vehicula augue sagittis. Duis pellentesque dolor vel diam imperdiet lacinia. Suspendisse eu finibus nibh. Pellentesque faucibus suscipit quam, et tincidunt lacus bibendum sit amet. Proin ut est vel arcu vestibulum fringilla. Pellentesque scelerisque tortor nec purus imperdiet, vel gravida metus sagittis.
+
+Nulla facilisi. Morbi placerat faucibus mauris a luctus. Donec pellentesque mauris auctor tortor laoreet maximus. Maecenas ac risus in turpis suscipit euismod. Cras id congue nibh. Donec efficitur risus nec velit convallis consectetur. Morbi tincidunt non urna non ornare. Sed at ipsum hendrerit magna ornare dapibus. Nunc et elit eu urna venenatis sagittis. Maecenas at euismod ex. Duis sed leo quis ligula imperdiet cursus. Nullam a auctor lorem. Nam fringilla convallis nisi, id mattis est aliquam quis. Vivamus faucibus ornare lectus id pretium. In nibh sem, bibendum at pharetra sit amet, vestibulum ac metus.

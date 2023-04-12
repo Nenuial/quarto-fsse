@@ -1,0 +1,14 @@
+\usepackage[calc,useregional]{datetime2}
+\DTMsetup{datesep=}
+
+\DTMnewstyle{yymmdd}{%
+\renewcommand*\DTMdisplaydate[4]{%
+\DTMtwodigits{##1}\DTMtwodigits{##2}\DTMtwodigits{##3}% 
+}
+\renewcommand*{\DTMDisplaydate}{\DTMdisplaydate}%
+}
+{}{}{}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+\newcolumntype{R}[1]{>{\RaggedLeft\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
