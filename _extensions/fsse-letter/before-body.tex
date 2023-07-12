@@ -18,7 +18,7 @@ $if(return-url)$
 $endif$
 
 $if(logo)$\setkomavar{fromlogo}{\includegraphics[$if(logo-size)$$logo-size$$else$width=2cm$endif$]{$logo$}}$endif$
-$if(date)$\setkomavar{date}{\DTMDate{$date$}}$endif$
+$if(date)$\setkomavar{date}{$date$}$endif$
 $if(yourref)$\setkomavar{yourref}{$yourref$}$endif$
 $if(yourmail)$\setkomavar{yourmail}{$yourmail$}$endif$
 $if(myref)$\setkomavar{myref}{$myref$}$endif$
