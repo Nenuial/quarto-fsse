@@ -1,0 +1,24 @@
+---
+format:
+  fsse-exam-pdf:
+    keep-tex: true
+title: "Examen"
+lang: fr-CH
+date: today
+time_allowed: "60 minutes"
+place: "Somewhere, Nowhere"
+fig-env: "emptyenv"
+filters: 
+  - fsse-solution
+  - quarto
+  - latex-environment
+correctors:
+  - Pascal Burkhard
+---
+
+[]{.q options="1"} A test question
+
+```{=latex}
+\languagename
+```
+

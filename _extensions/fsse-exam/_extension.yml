@@ -1,0 +1,27 @@
+title: "FSSE Exams"
+author: "Pascal Burkhard"
+version: 1.0.0
+contributes:
+  format:
+    pdf:
+      documentclass: exam
+      template-partials:
+        - title.tex
+        - pandoc.tex
+        - before-body.tex
+        - after-body.tex
+      include-in-header: 
+        - header-setup.tex
+      papersize: a4
+      colorlinks: false
+      callout-icon: false
+      date-format: "long"
+      execute:
+        echo: false
+        warning: false
+        error: false
+        output: "asis"
+      variables:
+        banner: "../fsse-resources/images/fsse_banner_short.pdf"
+        logo: "../fsse-resources/images/logo_fsse.png"
+        font-path: "../fsse-resources/fonts/"
