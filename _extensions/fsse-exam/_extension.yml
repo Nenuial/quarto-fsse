@@ -1,10 +1,11 @@
 title: "FSSE Exams"
 author: "Pascal Burkhard"
-version: 1.0.0
+version: 1.0.1
 contributes:
   format:
     pdf:
       documentclass: exam
+      classoption: []
       template-partials:
         - title.tex
         - pandoc.tex

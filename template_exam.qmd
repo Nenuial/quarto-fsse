@@ -1,13 +1,10 @@
 ---
-format:
-  fsse-exam-pdf:
-    keep-tex: true
+format: fsse-exam-pdf
 title: "Examen"
 lang: fr-CH
 date: today
 time_allowed: "60 minutes"
 place: "Somewhere, Nowhere"
-fig-env: "emptyenv"
 filters: 
   - fsse-solution
   - quarto
