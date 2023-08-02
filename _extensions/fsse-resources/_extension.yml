@@ -1,6 +1,6 @@
-title: "LDDR Ressources"
+title: "FSSE Ressources"
 author: "Pascal Burkhard"
-version: 1.0.2
+version: 1.0.3
 contributes:
   formats:
     pdf: default
