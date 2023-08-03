@@ -13,6 +13,7 @@ local function readStatus(meta)
     
     meta['commands']['q'] = 'question'
     meta['commands']['tf'] = 'tf'
+    meta['commands']['secpts'] = 'sectionpts'
     meta['environments']['answer'] = 'solutionorlines'
     meta['environments']['answerbox'] = 'solutionorbox'
   end
