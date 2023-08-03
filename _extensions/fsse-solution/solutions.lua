@@ -12,9 +12,11 @@ local function readStatus(meta)
     meta['environments'] = {}
     
     meta['commands']['q'] = 'question'
+    meta['commands']['p'] = 'part'
     meta['commands']['tf'] = 'tf'
     meta['commands']['secpts'] = 'sectionpts'
     meta['environments']['uplvl'] = 'EnvUplevel'
+    meta['environments']['parts'] = 'parts'
     meta['environments']['answer'] = 'solutionorlines'
     meta['environments']['answerbox'] = 'solutionorbox'
   end
