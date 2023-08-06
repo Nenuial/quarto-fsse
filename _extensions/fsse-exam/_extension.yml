@@ -1,6 +1,6 @@
 title: "FSSE Exams"
 author: "Pascal Burkhard"
-version: 1.0.6
+version: 1.0.7
 contributes:
   format:
     pdf:

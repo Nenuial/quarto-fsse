@@ -58,6 +58,11 @@
 % Remove examdoc solution header
 \renewcommand{\solutiontitle}{}
 
+% Provide a box for
+\renewcommand{\tftext}[1]{%
+\tabto{\CurrentLineWidth}%
+\parbox{minipage}[t][][t]{\linewidth-\TabPrevPos}{#1}}
+
 % Setup solutions with no breaks
 \BeforeBeginEnvironment{solutionorlines}{\par\nopagebreak\minipage{\linewidth}}
 \AfterEndEnvironment{solutionorlines}{\endminipage}

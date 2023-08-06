@@ -14,6 +14,7 @@ local function readStatus(meta)
     meta['commands']['q'] = 'question'
     meta['commands']['p'] = 'part'
     meta['commands']['tf'] = 'tf'
+    meta['commands']['tftext'] = 'tftext'
     meta['commands']['lng'] = 'lng'
     meta['commands']['tab'] = 'tabto'
     meta['commands']['secpts'] = 'sectionpts'
