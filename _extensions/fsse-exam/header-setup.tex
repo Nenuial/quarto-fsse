@@ -14,7 +14,7 @@
 \usepackage[all]{nowidow}
 
 % Tables and tabulars
-\usepackage{tabto}
+\usepackage{tabto,calc}
 \usepackage{longtable,ltxtable}
 \usepackage{tabu,array,multirow,multicol,adjustbox,booktabs}
 \usepackage{colortbl}
@@ -59,9 +59,9 @@
 \renewcommand{\solutiontitle}{}
 
 % Provide a box for
-\renewcommand{\tftext}[1]{%
+\newcommand{\tftext}[1]{%
 \tabto{\CurrentLineWidth}%
-\parbox{minipage}[t][][t]{\linewidth-\TabPrevPos}{#1}}
+\parbox[t][][t]{\linewidth-\TabPrevPos}{#1}}
 
 % Setup solutions with no breaks
 \BeforeBeginEnvironment{solutionorlines}{\par\nopagebreak\minipage{\linewidth}}
