@@ -93,8 +93,12 @@
 
 % Command for TRUE/FALSE
 \newcommand{\tf}[1]{%
-  \fillin[#1][0.8cm]\tabto{1cm}%
-}
+  \fillin[#1][0.8cm]\tabto{1cm}}
+
+% Command for TRUE/FALSE text boxes
+\newcommand{\tftext}[1]{%
+  \tabto{\CurrentLineWidth}%
+  \parbox[t][][t]{\linewidth-\TabPrevPos}}
 
 % Total point command
 \makeatletter
