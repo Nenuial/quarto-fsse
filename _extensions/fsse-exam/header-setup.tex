@@ -58,11 +58,6 @@
 % Remove examdoc solution header
 \renewcommand{\solutiontitle}{}
 
-% Provide a box for
-\newcommand{\tftext}[1]{%
-\tabto{\CurrentLineWidth}%
-\parbox[t][][t]{\linewidth-\TabPrevPos}{#1}}
-
 % Setup solutions with no breaks
 \BeforeBeginEnvironment{solutionorlines}{\par\nopagebreak\minipage{\linewidth}}
 \AfterEndEnvironment{solutionorlines}{\endminipage}
@@ -98,7 +93,7 @@
 % Command for TRUE/FALSE text boxes
 \newcommand{\tftext}[1]{%
   \tabto{\CurrentLineWidth}%
-  \parbox[t][][t]{\linewidth-\TabPrevPos}}
+  \parbox[t][][t]{\linewidth-\TabPrevPos}{#1}}
 
 % Total point command
 \makeatletter
