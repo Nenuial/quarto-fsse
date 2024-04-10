@@ -2,7 +2,7 @@
 title: Presentation
 subtitle: Subtitle
 format:
-  fsse-keynote-revealjs:
+  swiss-equestrian-keynote-revealjs:
     width: 1600
     height: 900
 ---
