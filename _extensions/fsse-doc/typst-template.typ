@@ -32,7 +32,8 @@
   
   show: chic.with(
     chic-header(
-      left-side: [
+      left-side: locate(
+        loc => if [#loc.page()] == [1] {[
         #block(width: 12cm,
           [#set text(fill: rgb("#00283c"), size: 8pt)
            *SWISS EQUESTRIAN*\
@@ -41,30 +42,36 @@
            #link("tel:0041313354343", "+41 (0)31 335 43 43"), #link("mailto:info@swiss-equestrian.ch", "info@swiss-equestrian.ch"), #link("https://www.swiss-equestrian.ch", "swiss-equestrian.ch")
           ])
         #v(2cm)
-      ],
-      right-side: [
+      ]}),
+      right-side: locate(
+        loc => if [#loc.page()] == [1] {[
         #place(
           top + right,
           dx: 1cm,
           image(width: 2.5cm, logo)
         )
-      ]
+      ]})
     ),
-    chic-offset(on: "header", 0cm),
-    chic-height(on: "header", 4.5cm),
+    chic-offset(on: "header", -3cm),
+    chic-height(on: "header", 2cm),
     chic-height(on: "footer", 1.5cm)
   )
   
+  v(2cm)
+  
   if(title != none) {
     set text(24pt)
+    set par(leading: .3em)
     align(center, {
-      strong(smallcaps(title))
-      if(subtitle != none) {
-        set text(fontsize + 2pt)
-        linebreak()
-        v(-1cm)
-        strong(smallcaps(subtitle))
-      }
+      block(width: 12cm, {
+        strong(smallcaps(title))
+        if(subtitle != none) {
+          set text(fontsize + 2pt)
+          linebreak()
+          v(-1cm)
+          strong(smallcaps(subtitle))
+        }
+      })
     })
   }
   

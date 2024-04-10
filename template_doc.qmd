@@ -1,5 +1,5 @@
 ---
-title: Document template
+title: Document template with very long title that should break
 
 format: fsse-doc-typst
 ---
