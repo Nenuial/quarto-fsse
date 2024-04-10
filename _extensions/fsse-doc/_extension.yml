@@ -1,8 +1,15 @@
-title: FSSE default document
+title: Swiss Equestrian default document
 author: Pascal Burkhard
-version: 1.0.2
+version: 1.1.0
 contributes:
   format:
+    typst:
+      font-paths: "../fsse-resources/fonts/"
+      template-partials:
+        - typst-template.typ
+        - typst-show.typ
+      variables:
+        logo: "../fsse-resources/images/logo_SE.svg"
     pdf:
       template-partials:
         - title.tex
