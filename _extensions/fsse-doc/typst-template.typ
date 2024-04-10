@@ -23,7 +23,7 @@
   // show math.equation: set text(weight: 100, font: mathfont)
   // show raw: set text(font: codefont)
   show strong: set text(weight: 300)
-  show heading: set text(weight: 300)
+  show heading: set text(weight: 600)
   set text(lang: lang,
            weight: "light",
            region: region,
