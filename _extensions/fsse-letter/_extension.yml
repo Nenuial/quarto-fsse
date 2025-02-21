@@ -1,6 +1,6 @@
 title: FSSE Letter
 author: Pascal Burkhard
-version: 1.0.2
+version: 1.0.3
 contributes:
   format:
     pdf:
@@ -44,4 +44,4 @@ contributes:
       mathfontoptions:
         - Path = /Library/Fonts/
         - Extension = .otf
-      
+source: nenuial/quarto-fsse

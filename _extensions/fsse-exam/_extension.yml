@@ -1,6 +1,6 @@
 title: "FSSE Exams"
 author: "Pascal Burkhard"
-version: 1.0.13
+version: 1.0.14
 contributes:
   format:
     pdf:
@@ -26,3 +26,4 @@ contributes:
         banner: "../fsse-resources/images/fsse_banner_short.pdf"
         logo: "../fsse-resources/images/logo_fsse.png"
         font-path: "../fsse-resources/fonts/"
+source: nenuial/quarto-fsse
